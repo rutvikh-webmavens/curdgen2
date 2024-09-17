@@ -21,10 +21,19 @@ class Table extends Model
     ];
 
     public const FIELD_TYPE_SELECT = [
-        'Text'     => 'Text',
-        'Email'    => 'Email',
+        'text'     => 'Text',
+        'email'    => 'Email',
         'textarea' => 'textarea',
         'password' => 'password',
+        'radio' =>  'radio',
+        'select' => 'select',
+        'checkbox' => 'checkbox',
+        'integer' => 'integer',
+        'float' => 'float',
+        'decimal' => 'decimal',
+        'date' => 'date',
+        'date_time' => 'date time',
+        'time' => 'time',
     ];
 
     protected $fillable = [
@@ -37,6 +46,8 @@ class Table extends Model
         'in_edit',
         'is_required',
         'sort_order',
+        'key_value_set',
+        'default_value',
         'created_at',
         'updated_at',
         'deleted_at',
